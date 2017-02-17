@@ -12,23 +12,61 @@
       <h1>Animal Wiki</h1>
     </div>
     <h2>What Animal would you like to learn about?</h2>
-    <button id="whatAnimal" type="button" name="button">Choose an Animal</button>
+    <div class="row">
+      <form id="animalForm">
+        <div class="form-group">
+          <select class="form-control" id="animal">
+            <option value="turtles">Turtles</option>
+            <option value="snakes">Snakes</option>
+            <option value="insects">Insects</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-warning">Show animal info</button>
+      </form>
+    </div>
+    <div class="row">
+      <div class="turtles animalInfo">
+        <h3>Turtles</h3>
+        <img src="img/turtle.gif" alt="turtles" />
+        <p>
+          Turtles are reptiles of the order Testudines (or Chelonii[3]) characterised by a special bony or cartilaginous shell developed from their ribs and acting as a shield.[4] "Turtle" may refer to the order as a whole (American English) or to fresh-water and sea-dwelling testudines (British English).[5]
 
-    <div class="turtles animalInfo">
-      <p>
-        This is info about turtles
-      </p>
+          The order Testudines includes both extant (living) and extinct species. The earliest known members of this group date from 157 million years ago,[1] making turtles one of the oldest reptile groups and a more ancient group than snakes or crocodilians. Of the 327 known species alive today, some are highly endangered.[6][7]
+
+          Turtles are ectotherms—animals commonly called cold-blooded—meaning that their internal temperature varies according to the ambient environment. However, because of their high metabolic rate, leatherback sea turtles have a body temperature that is noticeably higher than that of the surrounding water.
+
+          Turtles are classified as amniotes, along with other reptiles, birds, and mammals. Like other amniotes, turtles breathe air and do not lay eggs underwater, although many species live in or around water.
+        </p>
+      </div>
+      <div class="snakes animalInfo">
+        <h3>Snakes</h3>
+        <img src="img/snake.gif" alt="turtles" />
+        <p>
+          Snakes are elongated, legless, carnivorous reptiles of the suborder Serpentes[2] that can be distinguished from legless lizards by their lack of eyelids and external ears. Like all squamates, snakes are ectothermic, amniote vertebrates covered in overlapping scales. Many species of snakes have skulls with several more joints than their lizard ancestors, enabling them to swallow prey much larger than their heads with their highly mobile jaws. To accommodate their narrow bodies, snakes' paired organs (such as kidneys) appear one in front of the other instead of side by side, and most have only one functional lung. Some species retain a pelvic girdle with a pair of vestigial claws on either side of the cloaca.
+        </p>
+        <p>
+          Living snakes are found on every continent except Antarctica, and on most smaller land masses; exceptions include some large islands, such as Ireland, Iceland, Greenland, the Hawaiian archipelago, and the islands of New Zealand, and many small islands of the Atlantic and central Pacific oceans.[3] Additionally, sea snakes are widespread throughout the Indian and Pacific Oceans. More than 20 families are currently recognized, comprising about 500 genera and about 3,400 species.[4][5] They range in size from the tiny, 10.4 cm (4.1 in)-long thread snake[6] to the reticulated python of 6.95 meters (22.8 ft) in length.[7] The fossil species Titanoboa cerrejonensis was 12.8 meters (42 ft) long.[8] Snakes are thought to have evolved from either burrowing or aquatic lizards, perhaps during the Jurassic period, with the earliest known fossils dating to between 143 and 167 Ma ago.[9] The diversity of modern snakes appeared during the Paleocene period (c 66 to 56 Ma ago). The oldest preserved descriptions of snakes can be found in the Brooklyn Papyrus.
+        </p>
+        <p>
+          Most species are nonvenomous and those that have venom use it primarily to kill and subdue prey rather than for self-defense. Some possess venom potent enough to cause painful injury or death to humans. Nonvenomous snakes either swallow prey alive or kill by constriction.
+        </p>
+      </div>
+      <div class="insects animalInfo">
+        <h3>Insects</h3>
+        <img src="img/insect.gif" alt="bug" />
+        <p>
+          Insects (from Latin insectum, a calque of Greek ἔντομον [éntomon], "cut into sections") are a class (Insecta) of hexapod invertebrates within the arthropod phylum that have a chitinous exoskeleton, a three-part body (head, thorax and abdomen), three pairs of jointed legs, compound eyes and one pair of antennae. They are the most diverse group of animals on the planet, including more than a million described species and representing more than half of all known living organisms.[2][3] The number of extant species is estimated at between six and ten million,[2][4][5] and potentially represent over 90% of the differing animal life forms on Earth.[6] Insects may be found in nearly all environments, although only a small number of species reside in the oceans, a habitat dominated by another arthropod group, crustaceans.
+        </p>
+        <p>
+          The life cycles of insects vary but most hatch from eggs. Insect growth is constrained by the inelastic exoskeleton and development involves a series of molts. The immature stages can differ from the adults in structure, habit and habitat, and can include a passive pupal stage in those groups that undergo 4-stage metamorphosis (see holometabolism). Insects that undergo 3-stage metamorphosis lack a pupal stage and adults develop through a series of nymphal stages.[7] The higher level relationship of the Hexapoda is unclear. Fossilized insects of enormous size have been found from the Paleozoic Era, including giant dragonflies with wingspans of 55 to 70 cm (22–28 in). The most diverse insect groups appear to have coevolved with flowering plants.
+        </p>
+        <p>
+          Adult insects typically move about by walking, flying or sometimes swimming (see § Locomotion below). As it allows for rapid yet stable movement, many insects adopt a tripedal gait in which they walk with their legs touching the ground in alternating triangles. Insects are the only invertebrates to have evolved flight. Many insects spend at least part of their lives under water, with larval adaptations that include gills, and some adult insects are aquatic and have adaptations for swimming. Some species, such as water striders, are capable of walking on the surface of water. Insects are mostly solitary, but some, such as certain bees, ants and termites, are social and live in large, well-organized colonies. Some insects, such as earwigs, show maternal care, guarding their eggs and young. Insects can communicate with each other in a variety of ways. Male moths can sense the pheromones of female moths over great distances. Other species communicate with sounds: crickets stridulate, or rub their wings together, to attract a mate and repel other males. Lampyridae in the beetle order communicate with light.
+        </p>
+      </div>
+
     </div>
-    <div class="snakes animalInfo">
-      <p>
-        This is info about snakes
-      </p>
-    </div>
-    <div class="insects animalInfo">
-      <p>
-        This is info about insects
-      </p>
-    </div>
+
 
   </body>
 </html>

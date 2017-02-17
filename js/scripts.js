@@ -1,22 +1,17 @@
 $(function(){
+  $("#animalForm").submit(function() {
+    event.preventDefault();
 
-  var animalPrompt = function() {
-    return prompt("What animal do you want to learn about? turtles, snakes, or insects?");
-  };
-
-  $("#whatAnimal").click(function(){
-    var animal = animalPrompt();
+    var animalInput = $("#animal").val();
+    
     $(".animalInfo").hide();
-    if (animal === "turtles") {
+    if (animalInput === "turtles") {
       $(".turtles").show();
-    } else if (animal === "snakes") {
+    } else if (animalInput === "snakes") {
       $(".snakes").show();
 
-    } else if (animal === "insects"){
-      $(".insects").show();}
-
+    } else if (animalInput === "insects"){
+      $(".insects").show();
+    };
   });
-
-
-
 });
